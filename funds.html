@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manob sheba foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Noto Sans Bengali for the text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- TOP INFO BAR -->
+<div class="top-info-bar d-none d-md-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <a href="#">
+                    <i class="fas fa-location-dot"></i> Dhaka
+                </a>
+
+                <a href="tel:+8801234567890"><i class="fas fa-phone"></i> ০১২৩৪-৫৬৭৮৯০</a>
+                <a href="mailto:info@charity.org.bd"><i class="fas fa-envelope"></i> info@charity.org.bd</a>
+            </div>
+            <div class="d-flex gap-2">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+    <div class="container-fluid container-1240">
+        <div style="width: 10%">
+            <a class="navbar-brand" href="index.html" style="width: 20%;">
+                <img src="logo.png" style="height: 55px; width:65px" />
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="width: 70%;">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">হোম</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">আমাদের সম্পর্কে</a></li>
+                <li class="nav-item"><a class="nav-link" href="activity.html">কার্যক্রমসমূহ</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        রক্তদান
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <li>
+                            <a class="dropdown-item" href="blood.html">
+                                <i class="fas fa-sign-in-alt"></i> ডোনার
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="bloodneed.html">
+                                <i class="fas fa-photo-video"></i> রক্তের প্রয়োজন
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="blood.html">
+                                <i class="fas fa-photo-video"></i> রক্তদান
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="bloodlogin.html">
+                                <i class="fas fa-comments"></i> রক্তগ্রহিতা লগিন
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="scholership.html">মেধাবৃত্তি</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        পেইজ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <li>
+                            <a class="dropdown-item" href="login.html">
+                                <i class="fas fa-sign-in-alt"></i> লগ ইন
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="media.html">
+                                <i class="fas fa-photo-video"></i> মিডিয়া
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="funds.html">
+                                <i class="fas fa-photo-video"></i> donation
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="contact.html">
+                                <i class="fas fa-comments"></i> যোগাযোগ
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div style="width: 30%; text-align: right">
+            <button class="btn btn-signin" >দান করুন</button>
+            <button class="btn btn-signin" >দান করুন</button>
+        </div>
+
+    </div>
+</nav>
+<img src="contact.png" class="cover-img" alt="Contact Image">
+
+<!-- CONTACT SECTION -->
+
+<section class="programs-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-subtitle">আমাদের কার্যক্রম</div>
+            <h2 class="section-title">বিশেষ কার্যক্রমসমূহ</h2>
+        </div>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=500" alt="শিক্ষা কার্যক্রম" class="card-image">
+                    <div class="card-body">
+                        <span class="card-category">শিক্ষা</span>
+                        <h3 class="card-title">দরিদ্র শিশুদের জন্য শিক্ষা সহায়তা</h3>
+
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span class="progress-label">লক্ষ্যমাত্রা</span>
+                                <span class="progress-amount">৳৫০,০০০</span>
+                            </div>
+                            <div class="progress-wrapper">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-teal" role="progressbar" style="width: 65%">
+                                        <span class="progress-percentage">৬৫%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <div class="donor-info">
+                                <div class="donor-avatars">
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                                </div>
+                                <span>৩৫+ দাতা</span>
+                            </div>
+                            <button class="btn btn-donate btn-teal">দান করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=500" alt="স্বাস্থ্য সেবা" class="card-image">
+                    <div class="card-body">
+                        <span class="card-category">স্বাস্থ্য</span>
+                        <h3 class="card-title">বিনামূল্যে স্বাস্থ্য সেবা ক্যাম্প</h3>
+
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span class="progress-label">লক্ষ্যমাত্রা</span>
+                                <span class="progress-amount">৳৮০,০০০</span>
+                            </div>
+                            <div class="progress-wrapper">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-blue" role="progressbar" style="width: 75%">
+                                        <span class="progress-percentage">৭৫%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <div class="donor-info">
+                                <div class="donor-avatars">
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                                </div>
+                                <span>৫০+ দাতা</span>
+                            </div>
+                            <button class="btn btn-donate btn-blue">দান করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500" alt="খাদ্য বিতরণ" class="card-image">
+                    <div class="card-body">
+                        <span class="card-category">খাদ্য</span>
+                        <h3 class="card-title">দুস্থদের মাঝে খাদ্য বিতরণ</h3>
+
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span class="progress-label">লক্ষ্যমাত্রা</span>
+                                <span class="progress-amount">৳৬০,০০০</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-orange" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <div class="donor-info">
+                                <div class="donor-avatars">
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);"></div>
+                                </div>
+                                <span>৬৫+ দাতা</span>
+                            </div>
+                            <button class="btn btn-donate btn-orange">দান করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500" alt="বস্ত্র বিতরণ" class="card-image">
+                    <div class="card-body">
+                        <span class="card-category">বস্ত্র</span>
+                        <h3 class="card-title">শীতকালীন বস্ত্র বিতরণ কর্মসূচি</h3>
+
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span class="progress-label">লক্ষ্যমাত্রা</span>
+                                <span class="progress-amount">৳৪০,০০০</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-teal" role="progressbar" style="width: 55%"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <div class="donor-info">
+                                <div class="donor-avatars">
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                                </div>
+                                <span>২৮+ দাতা</span>
+                            </div>
+                            <button class="btn btn-donate btn-teal">দান করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500" alt="মেধাবৃত্তি" class="card-image">
+                    <div class="card-body">
+                        <span class="card-category">মেধাবৃত্তি</span>
+                        <h3 class="card-title">মেধাবী শিক্ষার্থীদের বৃত্তি প্রদান</h3>
+
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span class="progress-label">লক্ষ্যমাত্রা</span>
+                                <span class="progress-amount">৳১,০০,০০০</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-orange" role="progressbar" style="width: 45%"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <div class="donor-info">
+                                <div class="donor-avatars">
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                                </div>
+                                <span>৪২+ দাতা</span>
+                            </div>
+                            <button class="btn btn-donate btn-orange">দান করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="program-card">
+                    <img src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?w=500" alt="রক্তদান" class="card-image">
+                    <div class="card-body">
+                        <span class="card-category">রক্তদান</span>
+                        <h3 class="card-title">রক্তদান ক্যাম্প ও সচেতনতা</h3>
+
+                        <div class="progress-section">
+                            <div class="progress-info">
+                                <span class="progress-label">লক্ষ্যমাত্রা</span>
+                                <span class="progress-amount">৳৩০,০০০</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-blue" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer-info">
+                            <div class="donor-info">
+                                <div class="donor-avatars">
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                                    <div class="donor-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                                </div>
+                                <span>৭৮+ দাতা</span>
+                            </div>
+                            <button class="btn btn-donate btn-blue">দান করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-donate btn-orange" style="padding: 12px 40px; font-size: 1.1rem;">
+                সব কার্যক্রম দেখুন <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+    <div class="main-wrapper">
+        <div class="container-fluid p-0">
+
+            <!-- Orange Background Section -->
+            <div class="orange-bg-section">
+                <div class="container">
+                    <div class="row">
+                        <!-- Left Column: Logo (Overlapping) -->
+                        <div class="col-lg-12 position-relative">
+                            <div class="subscriber-container">
+                                <div class="subscriber-placeholder">
+                                    <!-- Using a placeholder/recreation since we don't have the exact vector file -->
+
+
+                                </div>
+                            </div>
+                            <!-- Spacer for desktop layout where logo is absolute -->
+                            <div class="d-none d-lg-block" style="height: 200px;"></div>
+                        </div>
+
+                        <!-- Right Column: Content -->
+                        <div class="col-lg-8">
+                            <div class="hero-text mt-4 mt-lg-0">
+                                <h1 class="hero-headline">
+                                    সর্বদা আরও বেশি লোকের জন্য উন্মুক্ত যারা পূর্বের অন্যায়দের কী সমর্থন করবেন
+                                </h1>
+                                <p class="hero-description">
+                                    আমাদের প্রতিষ্ঠান কেবল সুবিধাবঞ্চিত মানুষকেই সাহায্য করে না বরং সমাজে ঐক্য এবং আশা গড়ে তোলায় তাদের অনুভূতিও জাগিয়ে তোলে। এটি আমাদের মনে করিয়ে দেয় যে এটি কীভাবে করা যায়।
+                                </p>
+                                <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-lg-start gap-3">
+                                    <button class="btn btn-white-pill">
+                                        আরও দেখুন <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                    <a href="tel:+8801600000000" class="phone-link">
+                                        কল করুন : +৮৮ ০১৬ ০০০০০০০০
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Area (Inside the same orange section) -->
+                    <div class="footer-section mt-5">
+                        <div class="row">
+                            <!-- Column 1: Menu -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">মেনু</h5>
+                                <ul class="footer-links">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> আমাদের সম্পর্কে</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> কার্যকলাপসমূহ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> ব্লগ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> সাধারণ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> স্বেচ্ছাসেবী</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> মিডিয়া</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Column 2: Quick Links -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">কুইক লিংক</h5>
+                                <ul class="footer-links">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> ডোনেশন</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> মেম্বারশিপ ফরম</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> ফটো গ্যালারি</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> যোগাযোগ</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Column 3: Others -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">অন্যান্য</h5>
+                                <ul class="footer-links">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> হেল্পলাইন</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> প্রশ্ন ও উত্তর</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Column 4: Newsletter -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">নিউজ লেটার</h5>
+                                <p style="font-size: 0.9rem; opacity: 0.9;">অনলাইনে কোন কিছু না কিনলে বা কোন কিছু না জানলে আমাদের জানান।</p>
+
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control newsletter-input" placeholder="আপনার ইমেইল লিখুন" aria-label="Email">
+                                    <button class="btn btn-subscribe" type="button">সাবস্ক্রাইব</button>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        কপিরাইট © ২০২৪ বিক্রমপুর মানব সেবা ফাউন্ডেশন সর্বস্বত্ব সংরক্ষিত
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>

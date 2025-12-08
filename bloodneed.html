@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manob sheba foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Noto Sans Bengali for the text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- TOP INFO BAR -->
+<div class="top-info-bar d-none d-md-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <a href="#">
+                    <i class="fas fa-location-dot"></i> Dhaka
+                </a>
+
+                <a href="tel:+8801234567890"><i class="fas fa-phone"></i> ০১২৩৪-৫৬৭৮৯০</a>
+                <a href="mailto:info@charity.org.bd"><i class="fas fa-envelope"></i> info@charity.org.bd</a>
+            </div>
+            <div class="d-flex gap-2">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+    <div class="container-fluid container-1240">
+        <div style="width: 10%">
+            <a class="navbar-brand" href="index.html" style="width: 20%;">
+                <img src="logo.png" style="height: 55px; width:65px" />
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="width: 70%;">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">হোম</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">আমাদের সম্পর্কে</a></li>
+                <li class="nav-item"><a class="nav-link" href="activity.html">কার্যক্রমসমূহ</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        রক্তদান
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <li>
+                            <a class="dropdown-item" href="blood.html">
+                                <i class="fas fa-sign-in-alt"></i> ডোনার
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="bloodneed.html">
+                                <i class="fas fa-photo-video"></i> রক্তের প্রয়োজন
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="blood.html">
+                                <i class="fas fa-photo-video"></i> রক্তদান
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="bloodlogin.html">
+                                <i class="fas fa-comments"></i> রক্তগ্রহিতা লগিন
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="scholership.html">মেধাবৃত্তি</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        পেইজ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <li>
+                            <a class="dropdown-item" href="login.html">
+                                <i class="fas fa-sign-in-alt"></i> লগ ইন
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="media.html">
+                                <i class="fas fa-photo-video"></i> মিডিয়া
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="funds.html">
+                                <i class="fas fa-photo-video"></i> donation
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="contact.html">
+                                <i class="fas fa-comments"></i> যোগাযোগ
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div style="width: 30%; text-align: right">
+            <button class="btn btn-signin" >দান করুন</button>
+            <button class="btn btn-signin" >দান করুন</button>
+        </div>
+
+    </div>
+</nav>
+<img src="media.png" class="cover-img" alt="Contact Image">
+
+<div class="container">
+    <!-- Header -->
+    <div class="header-section">
+        <div class="badge-orange">◆ সহযোগী</div>
+        <h1 class="header-title">রুক্ত সংস্কার তথ্য</h1>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="text-center mb-5">
+        <div class="nav-tabs-custom">
+            <button class="nav-link active" onclick="showTab('members')">রক্ত প্রয়োজন</button>
+            <button class="nav-link" onclick="showTab('info')">আমার রক্তদাতা</button>
+            <button class="nav-link" onclick="showTab('staff')">সংগঠন </button>
+            <button class="nav-link" onclick="showTab('guidelines')">সেরা রক্তদাতা সংগ্রাহক</button>
+        </div>
+    </div>
+
+    <!-- Tab 1: Members -->
+    <div id="members" class="tab-content active">
+        <div class="members-grid">
+            <!-- Member 1 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 7 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69be16?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 8 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <!-- Member 9 -->
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="সদস্য" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab 2: Information -->
+    <div id="info" class="tab-content">
+        <div class="info-container">
+            <h2 class="info-section-title">রুক্ত প্রয়োজন</h2>
+            <p class="info-section-subtitle">রক্তের প্রয়োজন হলে নিচের পদ্ধতিগুলি অনুসরণ করুন:</p>
+
+            <div class="numbered-item">
+                <div class="numbered-title">1. ঘরে থাকা ব্যাক্সের সাথে যোগাযোগ করুন:</div>
+                <ul class="info-list">
+                    <li>নিজের হাসপাতাল বা ব্যাংক থেকে রক্ত বাক্স নিন</li>
+                    <li>বিশ্বস্ত প্রতিষ্ঠান থেকে রক্ত বাক্স নিন</li>
+                </ul>
+            </div>
+
+            <div class="numbered-item">
+                <div class="numbered-title">2. সামাজিক মোবাইলায় অ্যাপ্লিকেশন করুন:</div>
+                <ul class="info-list">
+                    <li>ফেসবুক বা ইউটিউবে রক্তদাতা খুঁজুন</li>
+                    <li>Blood Donation Bangladesh</li>
+                    <li>রুদ্রদাতা দোকানের সাথে যোগাযোগ করুন। যোগাযোগ:</li>
+                </ul>
+            </div>
+
+            <div class="numbered-item">
+                <div class="numbered-title">3. মোবাইল অ্যাপ ব্যবহার করুন:</div>
+                <ul class="info-list">
+                    <li>রুদ্রদাতার প্লাতে বিভিন্ন অ্যাপ ব্যবহার করতে পারেন:</li>
+                </ul>
+            </div>
+
+            <div class="numbered-item">
+                <div class="numbered-title">4. বড়-বাঁধ এবং আত্মীয়দের সাথ নির:</div>
+                <ul class="info-list">
+                    <li>আপনার নিজের মাধ্যমের সাথে যোগাযোগ করে রক্ত রুদ্রদাতা খুঁজে বের করুন</li>
+                </ul>
+            </div>
+
+            <div class="numbered-item">
+                <div class="numbered-title">5. ঘরে রুদ্রদাতা সংগ্রহের সাথে যোগাযোগ করুন:</div>
+                <ul class="info-list">
+                    <li>সম্ভত্ব, পুবান, বা আপনা রুদ্রদাতা সংগ্রহ থেকে সহায়তা চাইতে পারেন।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab 3: Staff -->
+    <div id="staff" class="tab-content">
+        <div class="members-grid">
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="স্টাফ" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="স্টাফ" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-image-container">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="স্টাফ" class="member-image">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">রিয়াদ হোসাইন</div>
+                    <div class="member-title">সদস্যা</div>
+                    <div class="member-email">riyadahmedarefi@gmail.com</div>
+                    <div class="member-description">পূর্বাভী, শিশুই, মুক্তিযোদ্ধা সম্মান, মুক্তিযোগ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab 4: Guidelines -->
+    <div id="guidelines" class="tab-content">
+        <div class="info-container">
+            <h2 class="info-section-title">সেরা রুদ্রদাতা সহায়ক</h2>
+            <p class="info-section-subtitle">একজন সেরা রুদ্রদাতা হওয়ার জন্য এই নির্দেশিকা অনুসরণ করুন:</p>
+
+            <div class="numbered-item">
+                <div class="numbered-title">স্বাস্থ্য এবং মেডিকেল মান বজায় রাখুন</div>
+                <ul class="info-list">
+                    <li>নিয়মিত স্বাস্থ্য পরীক্ষা করান এবং সুস্থ থাকুন</li>
+                    <li>রক্ত দেওয়ার আগে পর্যাপ্ত বিশ্রাম নিন এবং পুষ্টিকর খাবার খান</li>
+                </ul>
+            </div>
+
+            <div class="numbered-item">
+                <div class="numbered-title">দায়িত্বশীল হন এবং প্রতিশ্রুতিবদ্ধ থাকুন</div>
+                <ul class="info-list">
+                    <li>রক্তদানের সময় সময়মতো পৌঁছান এবং প্রতিশ্রুতি রক্ষা করুন</li>
+                    <li>জরুরি পরিস্থিতিতে সবসময় সাহায্যের জন্য প্রস্তুত থাকুন</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+    <div class="main-wrapper">
+        <div class="container-fluid p-0">
+
+            <!-- Orange Background Section -->
+            <div class="orange-bg-section">
+                <div class="container">
+                    <div class="row">
+                        <!-- Left Column: Logo (Overlapping) -->
+                        <div class="col-lg-12 position-relative">
+                            <div class="subscriber-container">
+                                <div class="subscriber-placeholder">
+                                    <!-- Using a placeholder/recreation since we don't have the exact vector file -->
+
+
+                                </div>
+                            </div>
+                            <!-- Spacer for desktop layout where logo is absolute -->
+                            <div class="d-none d-lg-block" style="height: 200px;"></div>
+                        </div>
+
+                        <!-- Right Column: Content -->
+                        <div class="col-lg-8">
+                            <div class="hero-text mt-4 mt-lg-0">
+                                <h1 class="hero-headline">
+                                    সর্বদা আরও বেশি লোকের জন্য উন্মুক্ত যারা পূর্বের অন্যায়দের কী সমর্থন করবেন
+                                </h1>
+                                <p class="hero-description">
+                                    আমাদের প্রতিষ্ঠান কেবল সুবিধাবঞ্চিত মানুষকেই সাহায্য করে না বরং সমাজে ঐক্য এবং আশা গড়ে তোলায় তাদের অনুভূতিও জাগিয়ে তোলে। এটি আমাদের মনে করিয়ে দেয় যে এটি কীভাবে করা যায়।
+                                </p>
+                                <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-lg-start gap-3">
+                                    <button class="btn btn-white-pill">
+                                        আরও দেখুন <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                    <a href="tel:+8801600000000" class="phone-link">
+                                        কল করুন : +৮৮ ০১৬ ০০০০০০০০
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Area (Inside the same orange section) -->
+                    <div class="footer-section mt-5">
+                        <div class="row">
+                            <!-- Column 1: Menu -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">মেনু</h5>
+                                <ul class="footer-links">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> আমাদের সম্পর্কে</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> কার্যকলাপসমূহ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> ব্লগ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> সাধারণ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> স্বেচ্ছাসেবী</a></li>
+                                    <li><a href="media.html"><i class="fas fa-chevron-right"></i> মিডিয়া</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Column 2: Quick Links -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">কুইক লিংক</h5>
+                                <ul class="footer-links">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> ডোনেশন</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> মেম্বারশিপ ফরম</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> ফটো গ্যালারি</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> যোগাযোগ</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Column 3: Others -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">অন্যান্য</h5>
+                                <ul class="footer-links">
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> হেল্পলাইন</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right"></i> প্রশ্ন ও উত্তর</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Column 4: Newsletter -->
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <h5 class="footer-heading">নিউজ লেটার</h5>
+                                <p style="font-size: 0.9rem; opacity: 0.9;">অনলাইনে কোন কিছু না কিনলে বা কোন কিছু না জানলে আমাদের জানান।</p>
+
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control newsletter-input" placeholder="আপনার ইমেইল লিখুন" aria-label="Email">
+                                    <button class="btn btn-subscribe" type="button">সাবস্ক্রাইব</button>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        কপিরাইট © ২০২৪ বিক্রমপুর মানব সেবা ফাউন্ডেশন সর্বস্বত্ব সংরক্ষিত
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    function showTab(tabName) {
+        // Hide all tabs
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => tab.classList.remove('active'));
+
+        // Remove active class from all buttons
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        // Show selected tab
+        document.getElementById(tabName).classList.add('active');
+
+        // Add active class to clicked button
+        event.target.classList.add('active');
+    }
+</script>
+</body>
+
+</html>

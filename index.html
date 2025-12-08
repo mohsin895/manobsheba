@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manob sheba foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Noto Sans Bengali for the text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- TOP INFO BAR -->
+    <div class="top-info-bar d-none d-md-block">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="#">
+                        <i class="fas fa-location-dot"></i> Dhaka
+                    </a>
+
+                    <a href="tel:+8801234567890"><i class="fas fa-phone"></i> ০১২৩৪-৫৬৭৮৯০</a>
+                    <a href="mailto:info@charity.org.bd"><i class="fas fa-envelope"></i> info@charity.org.bd</a>
+                </div>
+                <div class="d-flex gap-2">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+        <div class="container-fluid container-1240">
+           <div style="width: 10%">
+               <a class="navbar-brand" href="index.html" style="width: 20%;">
+                   <img src="logo.png" style="height: 55px; width:65px" />
+               </a>
+           </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="width: 70%;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">হোম</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">আমাদের সম্পর্কে</a></li>
+                    <li class="nav-item"><a class="nav-link" href="activity.html">কার্যক্রমসমূহ</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            রক্তদান
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li>
+                                <a class="dropdown-item" href="blood.html">
+                                    <i class="fas fa-sign-in-alt"></i> ডোনার
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="bloodneed.html">
+                                    <i class="fas fa-photo-video"></i> রক্তের প্রয়োজন
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="blood.html">
+                                    <i class="fas fa-photo-video"></i> রক্তদান
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="bloodlogin.html">
+                                    <i class="fas fa-comments"></i> রক্তগ্রহিতা লগিন
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="scholership.html">মেধাবৃত্তি</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            পেইজ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li>
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fas fa-sign-in-alt"></i> লগ ইন
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="media.html">
+                                    <i class="fas fa-photo-video"></i> মিডিয়া
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="funds.html">
+                                    <i class="fas fa-photo-video"></i> donation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contact.html">
+                                    <i class="fas fa-comments"></i> যোগাযোগ
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div style="width: 30%; text-align: right">
+                <button class="btn btn-signin" >দান করুন</button>
+                <button class="btn btn-signin" >দান করুন</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="carousel-container" id="carouselContainer">
+            <div class="carousel-slide active">
+                <img src="slider1.jpg" alt="স্বেচ্ছাসেবী কাজ">
+            </div>
+            <div class="carousel-slide">
+                <img src="slider2.jpg" alt="কমিউনিটি উন্নয়ন">
+            </div>
+
+        </div>
+
+        <div class="carousel-overlay"></div>
+
+        <div class="content-container">
+            <div class="hero-badge">
+                <i class="fas fa-heart"></i> আমাদের লক্ষ্য
+            </div>
+            <h1>মানবতার স্পার্শে পৌঁছে</h1>
+            <p class="hero-text">একটি সুন্দর বাংলাদেশ গড়তে আমরা প্রতিশ্রুতিবদ্ধ</p>
+            <div class="hero-buttons">
+                <button class="btn btn-orange">দান করুন এখনই</button>
+                <button class="btn btn-outline-light">আরও জানুন</button>
+            </div>
+        </div>
+
+        <div class="carousel-controls" style="display: none;">
+            <button class="carousel-btn" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+            <div class="carousel-dots" id="dotsContainer"></div>
+            <button class="carousel-btn" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        </div>
+    </section>
+    <div class="container " style="position: relative; top: -20px;z-index: 100; max-width: 900px">
+
+
+        <div class="search-container">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" class="search-input" placeholder="অনুসন্ধান করুন">
+            <button class="search-btn">খুঁজুন</button>
+        </div>
+
+
+    </div>
+    </sction>
+
+    <div class="container">
+        <div class="blood-main-container">
+
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <div class="header-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <h1 class="page-title">বর্তমান রক্তের তালিকা</h1>
+                <p class="page-subtitle">আপনার রক্তদান জীবন বাঁচাতে পারে। আজই এগিয়ে আসুন রক্তের অভাব পূরণে।</p>
+                <button class="btn btn-register">
+                রক্তদাতা হিসেবে নিবন্ধন করুন
+            </button>
+            </div>
+
+            <!-- Blood Stock Grid -->
+            <div class="row g-4">
+                <!-- A+ Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">A+</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="far fa-check-circle text-success"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-good">Good Stock</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>১০ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O+ Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">O+</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="far fa-check-circle text-warning"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-low">Low Stock</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>২.৫ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B+ Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">B+</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="far fa-check-circle text-success"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-good">Good Stock</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>১০ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AB+ Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">AB+</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="far fa-check-circle text-success"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-good">Good Stock</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>১০ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A- Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">A-</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="far fa-check-circle text-success"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-good">Good Stock</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>১০ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O- Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">O-</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="far fa-check-circle text-success"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-good">Good Stock</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>১০ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B- Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">B-</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="fas fa-exclamation-circle text-danger"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-critical">Critical Need</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>১ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AB- Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blood-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-center">
+                                <div class="blood-drop-icon"><i class="fas fa-tint"></i></div>
+                                <div>
+                                    <div class="blood-group-title">AB-</div>
+                                    <small class="text-muted">রক্তের গ্রুপ</small>
+                                </div>
+                            </div>
+                            <i class="far fa-check-circle text-warning"></i>
+                        </div>
+                        <div class="mt-2">
+                            <span class="status-badge bg-status-low">Low Stock</span>
+                        </div>
+                        <div class="stock-info">
+                            <span>অবশিষ্ট</span>
+                            <span>৩ ব্যাগ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urgent Request Section -->
+            <div class="urgent-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="urgent-title mb-3">
+                            <i class="fas fa-history urgent-icon"></i> জরুরি রক্তের প্রয়োজন
+                        </div>
+                        <p class="text-muted mb-3">নিম্নলিখিত রক্তের গ্রুপের জন্য আমাদের জরুরি ভিত্তিতে দাতা প্রয়োজন।</p>
+
+                        <div class="d-flex mb-3">
+                            <div class="blood-tag"><i class="fas fa-tint"></i> O+</div>
+                            <div class="blood-tag"><i class="fas fa-tint"></i> A+</div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-item"><i class="fas fa-map-marker-alt"></i> City General Hospital</div>
+                            <div class="info-item"><i class="far fa-calendar-alt"></i> Needed by Nov 6, 2025</div>
+                            <div class="info-item"><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</div>
+                        </div>
+                        <div class="col-lg-12 text-lg-start mt-3 mt-lg-0">
+                            <button class="btn btn-urgent-req">Blood Request</button>
+                            <button class="btn btn-search-blood">Search Blood</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content Column -->
+                <div class="col-lg-6">
+                    <!-- Badge -->
+                    <div class="badge-outline">
+                        আমাদের সম্পর্কে
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="main-title">
+                        আমাদের লক্ষ্য আপনার সহায়তায় আরও জীবনের পরিবর্তন
+                    </h1>
+
+                    <!-- Description Paragraph -->
+                    <p class="description">
+                        বিক্রমপুর মানব সেবা ফাউন্ডেশন একটি অরাজনৈতিক ও অলাভজনক স্বেচ্ছাসেবী সংগঠন। 'মানুষের সেবার হাত বাড়িয়ে, সুন্দর সমাজ বিনির্মাণে' এই লক্ষ্য নিয়ে ২০১৮ সালের ৮ নভেম্বর একদল তরুণের উদ্যোগে যাত্রা শুরু করে সংগঠনটি। আমরা কাজ করছি মুন্সিগঞ্জ জেলার সুবিধাবঞ্চিত
+                        নিচে থাকা মানুষের কল্যাণে এবং তরুণদের মধ্যে মানবিক মূল্যবোধ জাগিয়ে তুলতে।
+                    </p>
+
+                    <!-- Feature 1: Fundraising -->
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <!-- Money Bag Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>তহবিল সংগ্রহ</h4>
+                            <p>দরিদ্র বিমোচন, শিক্ষা ও চিকিৎসা সহায়তায় আমরা স্বচ্ছ ও কার্যকর তহবিল সংগ্রহ কার্যক্রম পরিচালনা করি।</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: Donation Activities -->
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <!-- Globe/Hands Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m-15.686 0A8.959 8.959 0 0 1 3 12c0-.778.099-1.533.284-2.253m0 0A11.959 11.959 0 0 1 12 10.5c2.998 0 5.74-1.1 7.843-2.918" />
+                        </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>দান কার্যক্রম</h4>
+                            <p>প্রতিটি অনুদান ব্যয় হয় মানুষের জীবনে ইতিবাচক পরিবর্তন আনতে — খাবার, পোশাক ও চিকিৎসা সহায়তার মাধ্যমে।</p>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <button class="button diagonal-tr-bl-out mt-3">
+                    আমাদের সম্পর্কে আরও জানুন
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L14 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                    </svg>
+                </button>
+                </div>
+
+                <!-- Right Image Column -->
+                <div class="col-lg-6">
+                    <div class="image-collage">
+                        <!-- Background Image (Group) -->
+                        <img src="section3.png" alt="Children receiving gifts" class="img-back">
+
+                        <!-- Foreground Image (Portrait) -->
+
+                        <!-- Brush Stroke SVG -->
+                        <div class="brush-stroke">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#FFFFFF" d="M45.7,-76.3C58.9,-69.3,69.1,-55.6,76.5,-41.2C83.9,-26.8,88.5,-11.7,85.6,2.2C82.7,16.1,72.3,28.8,61.7,39.6C51.1,50.4,40.3,59.3,28.1,65.2C15.9,71.1,2.3,74,-10.8,72.6C-23.9,71.2,-36.5,65.5,-47.8,56.8C-59.1,48.1,-69.1,36.4,-75.4,22.8C-81.7,9.2,-84.3,-6.3,-79.6,-20.3C-74.9,-34.3,-62.9,-46.8,-49.6,-53.8C-36.3,-60.8,-21.7,-62.3,-7.8,-60.7C6.1,-59.1,12.2,-54.4,32.5,-73.8Z" transform="translate(100 100) scale(1.1)" />
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 upcoming-work">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center section-header">
+                <span class="badge">◆ কার্যক্রম</span>
+                <h2 class="section-title">চলমান কার্যক্রমসমূহ</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card activity-card">
+                        <img src="section4.1.jpg?height=220&width=400&text=Beef+Distribution" class="card-img-top" alt="Beef Distribution">
+                        <div class="card-body">
+                            <div class="card-badge">
+                                <!-- Icon: Tag/Pin -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg> নিয়মিত কার্যক্রম
+                            </div>
+                            <h5 class="card-title">১০ টাকায় গরুর মাংস</h5>
+                            <p class="card-text">
+                                বিত্তবান মানুষ সেবা ফাউন্ডেশনের উদ্যোগে প্রতিবছর ঈদুল ফিতরে নিম্ন আয়ের মানুষের জন্য ১০...
+                            </p>
+                            <button class="btn btn-custom">
+                                <span>বিস্তারিত দেখুন</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card activity-card">
+                        <img src="section4.2.jpg?height=220&width=400&text=Iftar+Market" class="card-img-top" alt="Iftar Market">
+                        <div class="card-body">
+                            <div class="card-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg> নিয়মিত কার্যক্রম
+                            </div>
+                            <h5 class="card-title">১০ টাকায় ইফতার বাজার</h5>
+                            <p class="card-text">
+                                'ছায়াপথ' বিত্তবান মানুষ সেবা ফাউন্ডেশনের একটি মানবিক প্রকল্প। ২০১৮ সাল থেকে ২০২৩ সাল...
+                            </p>
+                            <button class="btn btn-custom">বিস্তারিত দেখুন</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card activity-card">
+                        <img src="section4.3.jpg?height=220&width=400&text=Chayapath" class="card-img-top" alt="Chayapath">
+                        <div class="card-body">
+                            <div class="card-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg> নিয়মিত কার্যক্রম
+                            </div>
+                            <h5 class="card-title">ছায়াপথ</h5>
+                            <p class="card-text">
+                                বিত্তবান মানুষ সেবা ফাউন্ডেশনের উদ্যোগে প্রতিবছর শীতের দিন নিম্ন আয়ের মানুষের জন্য...
+                            </p>
+                            <button class="btn btn-custom">বিস্তারিত দেখুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GALLERY SECTION -->
+    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-11-24%20025633-nF0dbiZEk00wbkIPNqap6Zi14WKGzr.jpg" class="bg-leaf-left" style="visibility: hidden;" alt="Decor">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="section-header">
+            <span class="section-badge">ব্লগ</span>
+            <h1 class="section-title">সাম্প্রতিক ব্লগ থেকে অন্তর্দৃষ্টি</h1>
+        </header>
+
+        <!-- Blog Grid -->
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <div class="card-img-wrapper">
+                        <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Scholarship Exam">
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="meta-info">
+                            <i class="far fa-clock"></i> 5 min read
+                        </div>
+                        <h5 class="card-title">মেধাবৃত্তি পরীক্ষা ১লা নভেম্বর</h5>
+                        <p class="card-text">
+                            বিক্রমপুর মানব সেবা ফাউন্ডেশনের নয়া অফিসে প্রথম সাধারণ সভা অনুষ্ঠিত হয়েছে গত শনিবার। বিস্তারিত জানতে পড়ুন...
+                        </p>
+                        <div class="card-footer-custom">
+                            <span class="date">১০ অক্টোবর, ২০২৫</span>
+                            <a href="#" class="read-more-link">বিস্তারিত <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <div class="card-img-wrapper">
+                        <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="General Meeting">
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="meta-info">
+                            <i class="far fa-clock"></i> 5 min read
+                        </div>
+                        <h5 class="card-title">নয়া অফিসে সাধারণ সভা অনুষ্ঠিত</h5>
+                        <p class="card-text">
+                            বিক্রমপুর মানব সেবা ফাউন্ডেশনের নয়া অফিসে প্রথম সাধারণ সভা অনুষ্ঠিত হয়েছে গত শনিবার। বিস্তারিত জানতে পড়ুন...
+                        </p>
+                        <div class="card-footer-custom">
+                            <span class="date">১৫ অক্টোবর, ২০২৫</span>
+                            <a href="#" class="read-more-link">বিস্তারিত <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <div class="card-img-wrapper">
+                        <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="General Meeting 2">
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="meta-info">
+                            <i class="far fa-clock"></i> 5 min read
+                        </div>
+                        <h5 class="card-title">নয়া অফিসে সাধারণ সভা অনুষ্ঠিত</h5>
+                        <p class="card-text">
+                            বিক্রমপুর মানব সেবা ফাউন্ডেশনের নয়া অফিসে প্রথম সাধারণ সভা অনুষ্ঠিত হয়েছে গত শনিবার। বিস্তারিত জানতে পড়ুন...
+                        </p>
+                        <div class="card-footer-custom">
+                            <span class="date">১৬ অক্টোবর, ২০২৫</span>
+                            <a href="#" class="read-more-link">বিস্তারিত <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Section Footer Button -->
+        <div class="text-center mt-5">
+            <button class="btn btn-see-more">
+            আরও দেখুন <i class="fas fa-arrow-right"></i>
+        </button>
+        </div>
+
+    </div>
+
+
+    <div class=" donation">
+        <div class="container ">
+        <!-- Header Section -->
+        <div class="row align-items-center section-header">
+            <div class="col-md-8">
+                <span class="category-badge">
+                    <i class="bi bi-star-fill me-1"></i> ওয়ান্টিং
+                </span>
+                <h1 class="main-title">অনুদান তহবিলসমূহ</h1>
+            </div>
+            <div class="col-md-4 text-md-end text-start mt-3 mt-md-0">
+                <button class="view-all-btn">
+                তহবিলসমূহ <i class="bi bi-arrow-up-right ms-1"></i>
+            </button>
+                <div class="text-muted small mt-1">চলুন একসাথে একটি পরিবর্তন আনি</div>
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="row g-4  ">
+
+            <!-- Card 1 (Blue Theme) -->
+            <div class="col-lg-6  ">
+                <div class="donation-card theme-blue">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-5">
+                            <div class="card-img-wrapper">
+                                <!-- Using a placeholder image similar to the wheelchair user -->
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Medical Help">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">পঙ্গুর পায়ের সুচিকিৎসা</h5>
+                                <p class="card-text">
+                                    কনকনে শীতে প্রত্যন্ত অঞ্চলের অসহায় শীতার্ত মানুষের একটুখানি উষ্ণতা কনকনে শীতে প্রত্যন্ত অঞ্চলের...
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-marker">৭০%</div>
+                                </div>
+
+                                <div class="stats-row">
+                                    <span>লক্ষ্য: ৳ ১,০০০</span>
+                                    <span>অর্জিত: ৳ ১৫০.০০</span>
+                                </div>
+
+                                <button class="btn btn-donate">
+                                দান করুন <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 (Teal/Green Theme) -->
+            <div class="col-lg-6  ">
+                <div class="donation-card theme-teal">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-5">
+                            <div class="card-img-wrapper">
+                                <!-- Using a placeholder image for hands/money -->
+                                <img src="https://images.unsplash.com/photo-1532629345422-7515f4d16335?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Donation">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">নিয়মিত অনুদান তহবিল</h5>
+                                <p class="card-text">
+                                    কনকনে শীতে প্রত্যন্ত অঞ্চলের অসহায় শীতার্ত মানুষের একটুখানি উষ্ণতা কনকনে শীতে প্রত্যন্ত অঞ্চলের...
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-marker">৪৫%</div>
+                                </div>
+
+                                <div class="stats-row">
+                                    <span>লক্ষ্য: ৳ ৫,০০০</span>
+                                    <span>অর্জিত: ৳ ১,২০০</span>
+                                </div>
+
+                                <button class="btn btn-donate">
+                                দান করুন <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <section class="gallery-section text-center">
+        <div class="container">
+            <!-- Header Section -->
+            <div class="mb-5">
+                <div class="section-badge">সম্পূর্ণ গ্যালারি</div>
+                <h2 class="section-title">ছবিসমূহ</h2>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="gallery-slider mb-4">
+                <div class="gallery-row slider-left">
+                    <img src="https://images.unsplash.com/photo-1628717341663-0007b0ee2597?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop">
+
+                    <!-- Duplicate for infinite loop -->
+                    <img src="https://images.unsplash.com/photo-1628717341663-0007b0ee2597?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop">
+                </div>
+            </div>
+            <div class="gallery-slider mt-4">
+                <div class="gallery-row slider-right">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=600&auto=format&fit=crop">
+
+                    <!-- Duplicate for infinite loop -->
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=600&auto=format&fit=crop">
+                </div>
+            </div>
+
+
+            <!-- Footer Button -->
+            <button class="btn btn-custom">
+            আরো দেখুন <i class="fas fa-arrow-right fa-sm"></i>
+        </button>
+        </div>
+    </section>
+
+    <section class="section-container">
+        <!-- Abstract brush stroke effect (simulated) -->
+        <svg class="position-absolute top-0 start-0" width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index: -1; opacity: 0.5;">
+        <path d="M-50 50 C 50 100, 150 0, 250 50 S 400 150, 500 50" stroke="white" stroke-width="100" stroke-linecap="round"/>
+        <path d="M-20 80 C 80 130, 180 30, 280 80" stroke="#f0f0f0" stroke-width="60" stroke-linecap="round"/>
+    </svg>
+
+        <div class="container text-center">
+            <!-- Header -->
+            <div class="badge-pill">
+                &#9679; ভিডিও
+            </div>
+            <h2 class="section-title">আমাদের কার্যক্রম সম্পর্কে ভিডিও</h2>
+
+            <!-- Video Grid -->
+            <div class="row g-4 justify-content-center">
+                <!-- Video Item 1 -->
+                <div class="col-md-4">
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=300&width=480" alt="Activity Video 1">
+                        <div class="play-overlay">
+                            <div class="play-btn">
+                                <i class="fas fa-play" style="margin-left: 4px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Item 2 -->
+                <div class="col-md-4">
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=300&width=480" alt="Activity Video 2">
+                        <div class="play-overlay">
+                            <div class="play-btn">
+                                <i class="fas fa-play" style="margin-left: 4px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Item 3 -->
+                <div class="col-md-4">
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=300&width=480" alt="Activity Video 3">
+                        <div class="play-overlay">
+                            <div class="play-btn">
+                                <i class="fas fa-play" style="margin-left: 4px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Button -->
+            <div>
+                <button class="btn btn-custom">
+                আরও দেখুন <i class="fas fa-arrow-right"></i>
+            </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <div class="container">
+        <div class="row g-5 align-items-start">
+
+            <!-- Left Column: Accordion -->
+            <div class="col-lg-6">
+                <div class="accordion custom-accordion" id="faqAccordion">
+
+                    <!-- Item 1 (Active/Blue) -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            বিক্রমপুর মানব সেবা ফাউন্ডেশনের প্রতিষ্ঠাতা কে?
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                বিক্রমপুর মানব সেবা ফাউন্ডেশনের একক কোনো প্রতিষ্ঠাতা নেই। তবে একাধিক প্রতিষ্ঠাতা সদস্য রয়েছে।
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            বিক্রমপুর মানব সেবা ফাউন্ডেশন কত সালে প্রতিষ্ঠা লাভ করে?
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                বিস্তারিত তথ্য শীঘ্রই আসছে...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            বিক্রমপুর মানব সেবা ফাউন্ডেশন কী?
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                এটি একটি অলাভজনক সামাজিক সংগঠন।
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            সংগঠনটির মূল লক্ষ্য কী?
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                সমাজের সুবিধাবঞ্চিত মানুষের সেবা করা।
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            কারা এই সংগঠনের সঙ্গে যুক্ত হতে পারে?
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                যে কেউ স্বেচ্ছাসেবী হিসেবে যুক্ত হতে পারেন।
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Column: Text & Video -->
+            <div class="col-lg-6">
+                <div class="ps-lg-4">
+                    <div class="tag-badge">
+                        প্রশ্ন ও উত্তর
+                    </div>
+
+                    <h2 class="section-title">প্রয়োজনীয় প্রশ্ন ও উত্তর</h2>
+
+                    <p class="section-desc">
+                        বিক্রমপুর মানব সেবা ফাউন্ডেশন সম্পর্কে সাধারণ মানুষের মনে থাকা প্রশ্নগুলোর সংক্ষিপ্ত ও স্পষ্ট উত্তর তুলে ধরা হয়েছে এখানে, যাতে সবাই সংগঠনটির লক্ষ্য ও কার্যক্রম সহজে জানতে পারে।
+                    </p>
+
+                    <div class="video-wrapper">
+                        <!-- Using a placeholder that represents the "hands joining together" concept from the image -->
+                        <div class="wrapper">
+                            <div class="video-main">
+                                <div class="promo-video">
+                                    <div class="waves-block">
+                                        <div class="waves wave-1"></div>
+                                        <div class="waves wave-2"></div>
+                                        <div class="waves wave-3"></div>
+                                    </div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=BqI0Q7e4kbk" class="video video-popup mfp-iframe" data-lity><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="main-wrapper">
+            <div class="container-fluid p-0">
+
+                <!-- Orange Background Section -->
+                <div class="orange-bg-section">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Left Column: Logo (Overlapping) -->
+                            <div class="col-lg-4 position-relative">
+                                <div class="logo-container">
+                                    <div class="logo-placeholder">
+                                        <!-- Using a placeholder/recreation since we don't have the exact vector file -->
+
+                                            <img src="logo.png" />
+
+                                    </div>
+                                </div>
+                                <!-- Spacer for desktop layout where logo is absolute -->
+                                <div class="d-none d-lg-block" style="height: 200px;"></div>
+                            </div>
+
+                            <!-- Right Column: Content -->
+                            <div class="col-lg-8">
+                                <div class="hero-text mt-4 mt-lg-0">
+                                    <h1 class="hero-headline">
+                                        সর্বদা আরও বেশি লোকের জন্য উন্মুক্ত যারা পূর্বের অন্যায়দের কী সমর্থন করবেন
+                                    </h1>
+                                    <p class="hero-description">
+                                        আমাদের প্রতিষ্ঠান কেবল সুবিধাবঞ্চিত মানুষকেই সাহায্য করে না বরং সমাজে ঐক্য এবং আশা গড়ে তোলায় তাদের অনুভূতিও জাগিয়ে তোলে। এটি আমাদের মনে করিয়ে দেয় যে এটি কীভাবে করা যায়।
+                                    </p>
+                                    <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-lg-start gap-3">
+                                        <button class="btn btn-white-pill">
+                                        আরও দেখুন <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                        <a href="tel:+8801600000000" class="phone-link">
+                                        কল করুন : +৮৮ ০১৬ ০০০০০০০০
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer Area (Inside the same orange section) -->
+                        <div class="footer-section mt-5">
+                            <div class="row">
+                                <!-- Column 1: Menu -->
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <h5 class="footer-heading">মেনু</h5>
+                                    <ul class="footer-links">
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> আমাদের সম্পর্কে</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> কার্যকলাপসমূহ</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> ব্লগ</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> সাধারণ</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> স্বেচ্ছাসেবী</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> মিডিয়া</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 2: Quick Links -->
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <h5 class="footer-heading">কুইক লিংক</h5>
+                                    <ul class="footer-links">
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> ডোনেশন</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> মেম্বারশিপ ফরম</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> ফটো গ্যালারি</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> যোগাযোগ</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 3: Others -->
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <h5 class="footer-heading">অন্যান্য</h5>
+                                    <ul class="footer-links">
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> হেল্পলাইন</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> প্রশ্ন ও উত্তর</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 4: Newsletter -->
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <h5 class="footer-heading">নিউজ লেটার</h5>
+                                    <p style="font-size: 0.9rem; opacity: 0.9;">অনলাইনে কোন কিছু না কিনলে বা কোন কিছু না জানলে আমাদের জানান।</p>
+
+                                    <div class="input-group mb-3">
+                                        <input type="email" class="form-control newsletter-input" placeholder="আপনার ইমেইল লিখুন" aria-label="Email">
+                                        <button class="btn btn-subscribe" type="button">সাবস্ক্রাইব</button>
+                                    </div>
+
+                                    <div class="social-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            কপিরাইট © ২০২৪ বিক্রমপুর মানব সেবা ফাউন্ডেশন সর্বস্বত্ব সংরক্ষিত
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        let autoPlayInterval;
+
+        function initDots() {
+            const dotsContainer = document.getElementById('dotsContainer');
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (i === 0) dot.classList.add('active');
+                dot.onclick = () => goToSlide(i);
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function showSlide(n) {
+            // Remove active class from all slides
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+
+            // Update dots
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Show current slide
+            slides[n].classList.add('active');
+            slides[n].style.animation = 'zoomIn 8s ease-in-out forwards';
+            dots[n].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide >= totalSlides) {
+                currentSlide = 0;
+            } else if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            }
+            showSlide(currentSlide);
+            resetAutoPlay();
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+            resetAutoPlay();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(nextSlide, 3000);
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+
+        // Initialize
+        initDots();
+        startAutoPlay();
+
+        // Pause on hover
+        const heroSection = document.querySelector('.hero-section');
+        heroSection.addEventListener('mouseenter', stopAutoPlay);
+        heroSection.addEventListener('mouseleave', startAutoPlay);
+
+
+
+        // Add this script to your HTML file, preferably before the closing </body> tag
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.donation-card');
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Add a staggered delay for multiple cards
+                        setTimeout(() => {
+                            entry.target.classList.add('animate-in');
+                        }, index * 150);
+
+                        // Optional: unobserve after animation to improve performance
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>
